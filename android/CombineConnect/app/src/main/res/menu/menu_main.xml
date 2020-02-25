@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="combineconnect.combine.se.MainActivity">
+    <item
+        android:id="@+id/settings_remove_all_layouts"
+        android:orderInCategory="100"
+        android:title="Clear and Reboot Application"
+        app:showAsAction="never"
+        />
+</menu>

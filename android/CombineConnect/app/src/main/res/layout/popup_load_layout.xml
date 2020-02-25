@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/load_layout_text"
+        android:text="Choose a layout to load:"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        />
+    <ListView
+        android:id="@+id/id_saved_layouts_list_view"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_below="@id/load_layout_text"
+        android:background="@android:color/transparent">
+
+    </ListView>
+
+
+</RelativeLayout>

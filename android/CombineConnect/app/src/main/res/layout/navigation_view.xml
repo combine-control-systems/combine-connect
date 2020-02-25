@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_nav_header">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_nav_fragments">
+
+                <ImageView
+                    android:id="@+id/combine_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/combine_logo"
+                    app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/combine_logo"
+                    android:id="@+id/combine_logo_text"
+                    android:text="@string/combine_control_systems"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:id="@+id/nav_fragments_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:text="@string/navigation"
+                    android:layout_below="@+id/combine_logo_text"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <View
+                    android:id="@+id/id_Fragment_Separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/shadedBackground"
+                    android:layout_below="@id/nav_fragments_text"/>
+                <Button
+                    android:id="@+id/id_connect_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_Fragment_Separator"
+                    android:background="?selectableItemBackground"
+                    android:drawableStart="@drawable/ic_bluetooth_black_24dp"
+                    android:drawableLeft="@drawable/ic_bluetooth_black_24dp"
+                    android:text="@string/connect_button"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/id_calibration_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_connect_button"
+                    android:background="?selectableItemBackground"
+                    android:drawableStart="@drawable/ic_calibration"
+                    android:drawableLeft="@drawable/ic_calibration"
+                    android:text="@string/tune_pid_button"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false" />
+<!--
+                <Button
+                    android:id="@+id/id_mode_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_tune_pid_button"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_mode"
+                    android:drawableLeft="@drawable/ic_mode"
+                    android:textAlignment="textStart"
+                    android:text="@string/mode_button"
+                    android:textAllCaps="false"/>
+                    -->
+
+                <Button
+                    android:id="@+id/id_manual_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_calibration_button"
+                    android:background="?selectableItemBackground"
+                    android:drawableStart="@drawable/ic_manual"
+                    android:drawableLeft="@drawable/ic_manual"
+                    android:textAlignment="textStart"
+                    android:text="@string/manual_control_button"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/id_plot_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_manual_button"
+                    android:background="?selectableItemBackground"
+                    android:drawableStart="@drawable/ic_plot"
+                    android:drawableLeft="@drawable/ic_plot"
+                    android:textAlignment="textStart"
+                    android:text="@string/plot_button"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/id_debug_console_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_plot_button"
+                    android:background="?selectableItemBackground"
+                    android:drawableStart="@drawable/ic_code_black_24dp"
+                    android:drawableLeft="@drawable/ic_code_black_24dp"
+                    android:textAlignment="textStart"
+                    android:text="@string/debug_console"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_main_states"
+                android:layout_below="@+id/id_nav_fragments"
+                >
+
+                <TextView
+                    android:id="@+id/nav_main_states_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:text="@string/main_states"
+                    />
+
+                <View
+                    android:id="@+id/id_main_states_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/shadedBackground"
+                    android:layout_below="@id/nav_main_states_text"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_states_group"
+                    android:layout_below="@id/id_main_states_separator"
+                    />
+
+                <ImageButton
+                    android:id="@+id/id_refresh_main_states_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="refresh_main_states"
+                    app:srcCompat="@drawable/ic_refresh_blue_24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_modes"
+                android:layout_below="@+id/id_main_states"
+                >
+
+                <TextView
+                    android:id="@+id/nav_modes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:text="@string/modes"
+                    />
+
+                <View
+                    android:id="@+id/id_modes_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/shadedBackground"
+                    android:layout_below="@id/nav_modes_text"
+                    />
+
+                <ImageButton
+                    android:id="@+id/id_refresh_modes_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="refresh_modes"
+                    app:srcCompat="@drawable/ic_refresh_blue_24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</com.google.android.material.navigation.NavigationView>

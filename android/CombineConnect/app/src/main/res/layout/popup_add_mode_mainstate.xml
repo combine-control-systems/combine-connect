@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_popup_tv_select_mode_mainState"
+        android:text="Select MainState or Mode:"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/id_popup_button_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/shadedBackground"
+        android:layout_below="@id/id_popup_tv_select_mode_mainState"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_addModeMainStateRadioGroup"
+        android:orientation="vertical"
+        android:layout_below="@id/id_popup_tv_select_mode_mainState">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main State"
+            android:id="@+id/id_main_state_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mode"
+            android:id="@+id/id_mode_radiobutton"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/id_popup_seperator"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:background="@color/shadedBackground"
+        android:layout_below="@id/id_addModeMainStateRadioGroup"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_mainstate_mode_radiogroup_layout"
+        android:layout_below="@id/id_popup_seperator">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_addMainStateRadioGroup"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_addModeRadioGroup"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_popup_select_button_layout"
+        android:text="Select Button:"
+        android:layout_below="@id/id_mainstate_mode_radiogroup_layout"/>
+
+    <View
+        android:id="@+id/id_popup_init_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/shadedBackground"
+        android:layout_below="@id/id_popup_select_button_layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/id_select_run_button"
+        android:layout_below="@+id/id_popup_select_button_layout"
+        android:layout_marginStart="50dp"
+        >
+
+        <ImageButton
+            android:id="@+id/id_calibration_run_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat ="@drawable/ic_play_arrow_green"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/id_checkbox_run_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/id_select_stop_button"
+        android:layout_below="@+id/id_popup_select_button_layout"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+            android:id="@+id/id_calibration_stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat ="@drawable/ic_stop_red"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/id_checkbox_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/id_select_mode_button"
+        android:layout_below="@+id/id_popup_select_button_layout"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageButton
+            android:id="@+id/id_calibration_mode_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat ="@drawable/ic_mode"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/id_checkbox_mode_button"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

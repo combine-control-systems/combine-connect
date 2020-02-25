@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Combine Connect</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_layout_text">Main Layout</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="combine_logo">combine_logo</string>
+    <string name="combine_control_systems">Combine Control Systems</string>
+    <string name="connect_button">&#160;&#160;Connect</string>
+    <string name="mode_button">&#160;&#160;Mode</string>
+    <string name="manual_control_button">&#160;&#160;Manual Control</string>
+    <string name="plot_button">&#160;&#160;Plot</string>
+    <string name="tune_pid_button">&#160;&#160;Calibration</string>
+    <string name="debug_console">&#160;&#160;Debug Console</string>
+    <string name="tune_filt_button">Tune Filter</string>
+    <string name="connect_main_text">Connect</string>
+    <string name="tunepid_main_text">Calibration</string>
+    <string name="mode_main_text">Mode</string>
+    <string name="plot_main_text">Plot</string>
+    <string name="manual_main_text">Manual Control</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="bond">Bond</string>
+    <string name="select_device">Select a Device</string>
+    <string name="discovered_devices">Available Devices</string>
+    <string name="refresh_discover_button">Refresh Discover Button</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="p_max_value">10000</string>
+    <string name="add_tunebar">Add Tunebar</string>
+    <string name="main_states">&#160;Main States</string>
+    <string name="navigation">&#160;Navigation</string>
+    <string name="modes">Modes</string>
+    <string name="infotext">Search for the device Combine Connect.\nOnce connected, the bluetooth icon in the toolbar should be blue and at least one main state should be shown in the navigation menu.</string>
+</resources>

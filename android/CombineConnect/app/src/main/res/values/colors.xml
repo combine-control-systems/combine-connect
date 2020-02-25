@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3d3d3d</color>
+    <color name="colorPrimaryDark">#1a1a1a</color>
+    <color name="colorAccent">#1a1a1a</color>
+    <color name="shadedBackground">#f0f0f0</color>
+    <color name="greenBackground">#61d8ff</color>
+    <color name="shadedBlue">#69b6f5</color>
+    <color name="DarkBlue">#008cff</color>
+    <color name="Transparent">#00ffffff</color>
+    <color name="colorNavigationItems">#ff000000</color>
+    <color name="backgroundColor">#fffcfcfc</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rounded_radius">27dp </dimen>
+    <dimen name="margin_radius">14dp </dimen>
+    <dimen name="frag_title_dist">10dp </dimen>
+    <dimen name="tune_text_size">16sp </dimen>
+    <dimen name="joystick_settings_textsize">14sp </dimen>
+    <dimen name="margin_title_content">30dp </dimen>
+</resources>

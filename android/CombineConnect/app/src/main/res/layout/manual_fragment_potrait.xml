@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/fragment_manual">
+
+
+
+        <TextView
+            android:id="@+id/id_main_manual_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/frag_title_dist"
+            android:text="@string/manual_main_text"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_manual_steering_angle_text"
+            android:text="Steering angle = "
+            android:layout_below="@id/id_main_manual_text"
+            android:layout_marginTop="@dimen/margin_title_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_manual_steering_angle_value"
+            android:text="0"
+            android:layout_toEndOf="@id/id_manual_steering_angle_text"
+            android:layout_alignTop="@id/id_manual_steering_angle_text"
+            android:layout_alignBottom="@id/id_manual_steering_angle_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_manual_delimiter"
+            android:text="|"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/id_manual_steering_angle_text"
+            android:layout_alignBottom="@id/id_manual_steering_angle_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_manual_power_text"
+            android:text="Power = "
+            android:layout_toRightOf="@id/id_manual_delimiter"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@id/id_manual_steering_angle_text"
+            android:layout_alignBottom="@id/id_manual_steering_angle_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_manual_power_value"
+            android:text="0"
+            android:layout_toEndOf="@id/id_manual_power_text"
+            android:layout_alignTop="@id/id_manual_steering_angle_text"
+            android:layout_alignBottom="@id/id_manual_steering_angle_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/manual_add_button_layout"
+            android:layout_below="@+id/id_manual_power_value"
+            android:layout_marginTop="@dimen/margin_title_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_manual_modestate_layout"
+                >
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                app:srcCompat = "@drawable/ic_add_black_24dp"
+                android:background="?selectableItemBackground"
+                android:id="@+id/manual_add_button"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

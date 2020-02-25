@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="combineconnect.combine.se.MainActivity">
+    <item
+        android:id="@+id/settings_reset"
+        android:orderInCategory="101"
+        android:title="Reset"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/settings_request_new_rule"
+        android:orderInCategory="102"
+        android:title="Update Signals"
+        app:showAsAction="never"
+        />
+</menu>

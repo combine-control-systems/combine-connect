@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/id_add_tunebar"
+        android:orderInCategory="101"
+        android:title="Add TuneBar"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/id_add_modestate"
+        android:orderInCategory="102"
+        android:title="Add Button"
+        app:showAsAction="never"
+        />
+</menu>

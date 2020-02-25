@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:id="@+id/id_popup_joystick_center_view"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_joysticksettings_angle_settings"
+        android:text="Angle Settings:"
+        android:textSize="@dimen/joystick_settings_textsize"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/id_joystick_popup_seperator1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/shadedBackground"
+        android:layout_below="@id/id_joysticksettings_angle_settings"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_joysticksettings_angle_edittext"
+        android:hint="Maximum Angle"
+        android:layout_below="@id/id_joystick_popup_seperator1"
+        android:textSize="@dimen/joystick_settings_textsize"
+        android:inputType="numberDecimal"
+        android:layout_alignEnd="@id/id_popup_joystick_center_view"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_joysticksettings_angle_radiogroup"
+        android:layout_below="@id/id_joysticksettings_angle_edittext"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One Quadrant Angle"
+            android:textSize="@dimen/joystick_settings_textsize"
+            android:id="@+id/id_joysticksettings_angle_radiobutton_one"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Two Quadrant Angle"
+            android:textSize="@dimen/joystick_settings_textsize"
+            android:id="@+id/id_joysticksettings_angle_radiobutton_two"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Four Quadrant Angle"
+            android:textSize="@dimen/joystick_settings_textsize"
+            android:id="@+id/id_joysticksettings_angle_radiobutton_four"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_joysticksettings_power_settings"
+        android:text="Power Settings:"
+        android:textSize="@dimen/joystick_settings_textsize"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/id_joysticksettings_angle_radiogroup"/>
+
+    <View
+        android:id="@+id/id_joystick_popup_seperator2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/shadedBackground"
+        android:layout_below="@id/id_joysticksettings_power_settings"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_joysticksettings_power_edittext"
+        android:hint="Power factor"
+        android:layout_below="@id/id_joystick_popup_seperator2"
+        android:textSize="@dimen/joystick_settings_textsize"
+        android:inputType="numberDecimal"
+        android:layout_alignEnd="@id/id_popup_joystick_center_view"/>
+
+
+</RelativeLayout>

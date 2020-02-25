@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.androidplot.xy.XYPlot xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:layout_below="@id/id_main_plot_text"
+    android:id="@+id/id_plot_graph1"
+    style = "@style/APDefacto.Light"
+    ap:lineLabels = "left|bottom"
+    ap:legendTextColor = "@color/colorAccent">
+</com.androidplot.xy.XYPlot>

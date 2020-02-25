@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="combineconnect.combine.se.MainActivity">
+    <item
+        android:id="@+id/settings_reset"
+        android:orderInCategory="101"
+        android:title="Reset"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/settings_transmit_variables"
+        android:orderInCategory="102"
+        android:title="Update Variables"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/settings_calibration_save_layout"
+        android:orderInCategory="103"
+        android:title="Save Layout"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/settings_calibration_load_layout"
+        android:orderInCategory="104"
+        android:title="Load Layout"
+        app:showAsAction="never"
+        />
+</menu>

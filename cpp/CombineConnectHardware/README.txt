@@ -1,0 +1,1 @@
+Code uploaded to the combine connect external hardware (A simple ESP32 communicating with the users ECU through Serial1).

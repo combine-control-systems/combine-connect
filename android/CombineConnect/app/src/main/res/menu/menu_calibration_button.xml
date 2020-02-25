@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/id_remove_modestate"
+        android:orderInCategory="102"
+        android:title="Remove Button"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/id_get_variablename"
+        android:orderInCategory="103"
+        android:title="Show Variable Name"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/id_get_identifier"
+        android:orderInCategory="104"
+        android:title="Show Identifier"
+        app:showAsAction="never"
+        />
+</menu>

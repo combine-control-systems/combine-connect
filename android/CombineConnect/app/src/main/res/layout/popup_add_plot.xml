@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signals:"
+
+            android:textSize="@dimen/tune_text_size"
+            android:id="@+id/id_popup_tv_signals"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/id_popup_plot_signals_layout"
+            android:layout_below="@id/id_popup_tv_signals">
+
+            <!--
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_left"
+                android:text="Left Sensor"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_right"
+                android:layout_below="@id/plot_checkbox_left"
+                android:text="Right Sensor"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_front"
+                android:layout_below="@id/plot_checkbox_right"
+                android:text="Front Sensor"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_debug"
+                android:layout_below="@id/plot_checkbox_front"
+                android:text="Debug"
+                />
+                -->
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scale Settings"
+            android:textSize="@dimen/tune_text_size"
+            android:layout_below="@id/id_popup_plot_signals_layout"
+            android:id="@+id/id_popup_tv_scale_settings"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/id_popup_tv_scale_settings"
+            android:id="@+id/popup_plot_scale_layout">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto x"
+                android:id="@+id/popup_plot_checkbox_autox"
+                android:checked="true"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="# Samples"
+                android:layout_alignTop="@id/popup_plot_checkbox_autox"
+                android:layout_alignBottom="@id/popup_plot_checkbox_autox"
+                android:layout_toRightOf="@id/popup_plot_checkbox_autox"
+                android:padding="5dp"
+                android:layout_marginStart="30dp"
+                android:textSize="@dimen/tune_text_size"
+                android:inputType="number"
+                android:id="@+id/id_popup_nbr_samples_edit_text"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto y"
+                android:id="@+id/popup_plot_checkbox_autoy"
+                android:layout_below="@id/popup_plot_checkbox_autox"
+                android:checked="true"
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/popup_plot_checkbox_autoy"
+                android:layout_alignBottom="@id/popup_plot_checkbox_autoy"
+                android:layout_toRightOf="@id/popup_plot_checkbox_autoy"
+                android:layout_marginStart="30dp"
+                android:padding="5dp"
+                android:textSize="@dimen/tune_text_size"
+                android:hint="Y min"
+                android:inputType="number"
+                android:id="@+id/id_popup_plot_edittext_ymin"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/popup_plot_checkbox_autoy"
+                android:layout_alignBottom="@id/popup_plot_checkbox_autoy"
+                android:layout_toEndOf="@id/id_popup_plot_edittext_ymin"
+                android:layout_marginStart="30dp"
+                android:padding="5dp"
+                android:textSize="@dimen/tune_text_size"
+                android:hint="Y max"
+                android:inputType="number"
+                android:id="@+id/id_popup_plot_edittext_ymax"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Settings"
+            android:textSize="@dimen/tune_text_size"
+            android:layout_below="@+id/popup_plot_scale_layout"
+            android:id="@+id/id_popup_plot_tv_view_settings"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/id_popup_plot_view_settings_layout"
+            android:layout_below="@id/id_popup_plot_tv_view_settings">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_enable_x_title"
+                android:text="Enable X title"
+                android:checked="true"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_enable_y_title"
+                android:layout_below="@id/plot_checkbox_enable_x_title"
+                android:text="Enable Y title"
+                android:checked="true"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_enable_x_tick"
+                android:layout_below="@id/plot_checkbox_enable_y_title"
+                android:text="Enable X Tick"
+                android:checked="true"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_enable_y_tick"
+                android:layout_below="@id/plot_checkbox_enable_x_tick"
+                android:text="Enable Y Tick"
+                android:checked="true"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot_checkbox_enable_legend"
+                android:layout_below="@id/plot_checkbox_enable_y_tick"
+                android:text="Enable Legend"
+                android:checked="true"
+                />
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
